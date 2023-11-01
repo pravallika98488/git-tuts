@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: echo "hello-world"
+        run: git status
        
