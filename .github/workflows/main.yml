@@ -1,9 +1,11 @@
 name: hello-world
-on: status
+on:
+  schedule:
+    - cron: '17 23 * * 3,4'
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: git --version
+        run: echo "hello- world"
        
